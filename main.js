@@ -51,3 +51,32 @@ if (document.querySelector('.modal-wrapper'))
         toggleModal('remove', btn);
     });
 }
+
+
+// Attach event listener to all edit icons
+document.querySelectorAll('.edit-trigger').forEach(btn => {
+  btn.addEventListener('click', function() {
+    // Get the table row element
+    let row = this.closest('tr');
+
+    // Get the data from the row cells
+    let name = row.cells[0].textContent;
+    let location = row.cells[1].textContent;
+    let status = row.cells[2].textContent;
+    let price = row.cells[3].textContent;
+
+    // Populate the modal input fields with the data for editing
+    let modal = document.getElementById('centeredFormModal');
+    let nameInput = modal.querySelector('#grid-first-name');
+    let locationInput = modal.querySelector('#location');
+    let statusInput = modal.querySelector('#grid-last-name');
+    
+    nameInput.value = grid-first-name;
+    locationInput.value = location;
+    statusInput.value = grid-last-name;
+  
+
+    // Open the modal
+    modal.classList.add('modal-is-open');
+  });
+});

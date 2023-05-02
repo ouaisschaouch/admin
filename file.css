@@ -1,0 +1,66 @@
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+
+  
+  /* Style the table headings */
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+  }
+  .container {
+    position: absolute;top: 120px; left: 200px;
+  }
+  
+  /* Style the table cells */
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the input fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+  }
+  
+  /* Style the submit and reset buttons */
+  input[type="submit"], input[type="reset"] {
+    background-color: #4CAF50;
+border: none;
+color: #fff;
+padding: 12px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+border-radius: 14px;
+cursor: pointer;
+margin-left: 80%;
+position: relative;
+top: 2px;
+
+
+  }
+  
+  input[type="reset"] {
+    background-color: #f44336;
+  }
+  
+  input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #3e8e41;
+  }
+  
+
+  
